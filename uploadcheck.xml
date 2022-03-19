@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Automation">
+    <listeners>
+        <listener class-name ="listeners.Listeners"/>
+    </listeners>
+    <test name ="Upload Check test">
+        <classes>
+            <class name="com.techlistic.tests.UploadCheck"></class>
+        </classes>
+    </test>
+</suite>

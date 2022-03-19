@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Automation">
+    <listeners>
+        <listener class-name ="listeners.Listeners"/>
+    </listeners>
+    <test name ="Regression test">
+ <groups>
+       <run>
+        <include name="regression" />
+       </run>
+    </groups>
+    <classes>
+        <class name="com.techlistic.tests.PracticeForm">
+    </class>
+    </classes>
+    </test>
+</suite>

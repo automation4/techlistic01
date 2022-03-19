@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Automation">
+    <listeners>
+        <listener class-name = "listeners.Listeners"/>
+    </listeners>
+    <test name ="Smoke Run Parameter">
+    <parameter name ="browser" value ="chrome"/>
+    <parameter name ="version" value ="2022"/>
+        <groups>
+            <run>
+                <include name ="smoke"/>
+            </run>
+        </groups>
+    <classes>
+        <class name = "com.techlistic.tests.ParameterTest"/>
+    </classes>
+    </test>
+    <test name ="Smoke Run PracticeForm">
+        <groups>
+            <run>
+                <include name ="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.techlistic.tests.PracticeForm"/>
+        </classes>
+    </test>
+</suite>
