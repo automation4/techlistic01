@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.509 s - in TestSuite
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.739 s <<< FAILURE! - in TestSuite
+com.techlistic.tests.PracticeForm.UploadImage  Time elapsed: 0.078 s  <<< FAILURE!
+org.openqa.selenium.InvalidArgumentException: 
+invalid argument
+  (Session info: chrome=99.0.4844.74)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-DKAMDAI', ip: '192.168.0.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cc4d9c569bbd6f3c7f656bfad610c5c, clickElement {id=c76d0d6c-6973-4672-a24b-20796a7446b2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\PCP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:53044}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53044/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9cc4d9c569bbd6f3c7f656bfad610c5c)] -> css selector: input[class='input-file']]
+Session ID: 9cc4d9c569bbd6f3c7f656bfad610c5c
+	at com.techlistic.tests.PracticeForm.UploadImage(PracticeForm.java:88)
+
