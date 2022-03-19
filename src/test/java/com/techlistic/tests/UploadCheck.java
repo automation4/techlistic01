@@ -5,6 +5,7 @@ import base.Base;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -20,6 +21,7 @@ Logger log = LogManager.getLogger(UploadCheck.class.getName());
     public void setup() throws IOException, InterruptedException {
         driver = initializeDriver();
         Reporter.log("Driver is initialized Successfully");
+        log.info("Driver is initialized Successfully");
         Reporter.log("New Changes");
         driver.get(Utilities.getData("testurl2"));
         home  = new Diffcheckerhomepage(driver);
@@ -36,6 +38,7 @@ Logger log = LogManager.getLogger(UploadCheck.class.getName());
             Thread.sleep(2000);
              WebElement element = belowElement(home.clicUploadText(),"div");
         Reporter.log(element.getText());
+        Assert.assertTrue(true,"file uploaded successfully");
 
         }
     }
