@@ -24,7 +24,7 @@ public class Listeners extends Base implements ITestListener {
 
     public void onStart(ITestContext testContext) {
 
-        ehr = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\src\\reports\\reportsExtentreport_"+ System.currentTimeMillis()+".html");
+        ehr = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\src\\reports\\Extentreport.html");
         ehr.config().setTestViewChartLocation(ChartLocation.TOP);
         ehr.config().setDocumentTitle("Tecgkusutc Atutomation");
         ehr.config().setReportName("Tester");
